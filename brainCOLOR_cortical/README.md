@@ -130,4 +130,4 @@ Click any region name to view its full visualization and description.
 | 120 | TTG | [transverse-temporal-gyrus_right](./transverse-temporal-gyrus_right/README.md) |
 | 121 | TTG | [transverse-temporal-gyrus_left](./transverse-temporal-gyrus_left/README.md) |
 
-
+{% include citation.html %}
