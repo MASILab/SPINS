@@ -1,5 +1,9 @@
 # brainCOLOR Atlas
 
+![brainCOLOR Cortical Atlas](./exploding_glass_brain.gif)
+
+**Full Quality Version:** [Download MP4](./exploding_glass_brain.mp4)
+
 Brain region visualizations from the **brainCOLOR** atlas, generated using the SLANT parcellation pipeline. Each region includes rotating 3D brain visualizations (MP4, GIF), a triplanar PNG, and an AI-generated anatomical description.
 
 The link to the brainCOLOR website is provided : https://mindboggle.info/braincolor/
