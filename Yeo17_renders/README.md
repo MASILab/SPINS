@@ -1,8 +1,8 @@
 # Yeo-17 Functional Atlas
 
-![Yeo-17 Functional Atlas](./spinning_yeo17.mp4)
+![Yeo-17 Functional Atlas](./yeo17.gif)
 
-**Full Quality Version:** [Download MP4](./spinning_yeo17.mp4)
+**Full Quality Version:** [Download MP4](./yeo17.mp4)
 
 Functional connectivity visualizations based on the **Yeo-17 Network** parcellation. These networks represent distinct functional systems within the human cerebral cortex, derived from intrinsic functional MRI (fMRI) data. Each network entry includes rotating 3D visualizations, triplanar overlays on T1 and Ghost Brain backgrounds, and biological descriptions.
 
