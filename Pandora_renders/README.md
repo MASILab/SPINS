@@ -2,7 +2,7 @@
 
 ![PandoraTractSeg Atlas](./spinning_bundles.gif)
 
-**Full Quality Version:** [Download MP4](./spinning_bundles.mp4)
+**Full Quality Version:** [Download MP4](./spinning_bundles_2.mp4)
 
 White matter tractography visualizations based on the **PandoraTractSeg** bundle parcellation. These bundles represent distinct white matter pathways within the human brain, derived from diffusion MRI (dMRI) tractography data. Each bundle entry includes rotating 3D visualizations, triplanar overlays on T1 and Ghost Brain backgrounds, and biological descriptions.
 
