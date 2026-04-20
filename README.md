@@ -1,5 +1,4 @@
-#Introducing SPINS: A shared public visualization library of
-neuroanatomical structures
+# Introducing SPINS: A shared public visualization library of neuroanatomical structures
 
 Brain atlases, or labeled anatomical spatial maps, are essential for understanding brain
 structure and function. However, despite the necessity of atlases for interpretation of
