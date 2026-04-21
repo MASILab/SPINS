@@ -1,5 +1,9 @@
 # Pandora-TractSeg Atlas
 
+![Pandora_TractSeg](./spinning_bundles.gif)
+
+**Full Quality Version:** <a href="./spinning_bundles_2.mp4" download>Download MP4</a>
+
 ## Overview
 
 The Pandora-TractSeg brain atlas is a white-matter tract parcellation derived from the Pandora dataset, which aggregates multi-cohort, multi-scanner diffusion MRI processed with the TractSeg framework to yield consistent, data-driven delineations of major fiber bundles across the brain. It parcellates a large set of anatomically defined tracts (e.g., association, commissural, and projection pathways) identified via convolutional neural networks trained on high-quality diffusion data, generating probabilistic or template-based representations of tract location and shape in standard space. Construction typically involves preprocessing and harmonization of diffusion MRI, estimation of fiber orientation distributions, automated tract segmentation with TractSeg, and subsequent spatial normalization and averaging across many subjects to produce robust group-level tract probability maps and labels. The atlas is used in neuroimaging research to quantify tract-specific microstructural measures, perform region-of-interest analyses, guide tract-based spatial statistics, and study developmental, aging, or disease-related alterations in white-matter pathways in a standardized and reproducible manner. There is no direct link to the website.

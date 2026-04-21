@@ -1,5 +1,9 @@
 # Yeo-17 Atlas
 
+![Yeo-17](./yeo17.gif)
+
+**Full Quality Version:** <a href="./yeo17.mp4" download>Download MP4</a>
+
 ## Overview
 
 The Yeo-17 brain atlas is a large-scale cortical parcellation that divides the human cerebral cortex into 17 intrinsic functional networks based on resting-state functional MRI (rs-fMRI) connectivity patterns, capturing finer-grained subnetworks within broader systems such as visual, somatomotor, dorsal and ventral attention, limbic, frontoparietal control, and default mode networks. It was constructed by Yeo and colleagues using clustering (primarily a spatially constrained variant of k-means) on rs-fMRI data from a large cohort of healthy adults (originally from the Buckner lab datasets), registered to a common surface-based template (fsaverage) in FreeSurfer, and evaluated for robustness across subjects and datasets. The 17-network solution extends a coarser 7-network solution from the same work, providing more detailed functional subdivisions while maintaining macroscale network structure and hemispheric symmetry. This atlas is widely used for studying large-scale brain organization, defining regions of interest in functional connectivity and task-based studies, examining network alterations in neurological and psychiatric disorders, and guiding network-based analyses such as graph theory metrics and connectivity-based individual differences. [Atlas Website](https://surfer.nmr.mgh.harvard.edu/fswiki/CorticalParcellation_Yeo2011)
