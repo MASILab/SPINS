@@ -1,5 +1,9 @@
 # brainCOLOR Atlas
 
+![brainCOLOR Cortical Atlas](./exploding_glass_brain.gif)
+
+**Full Quality Version:** <a href="./exploding_glass_brain.mp4" download>Download MP4</a>
+
 ## Overview
 
 The brainCOLOR atlas is a manually labeled human neuroanatomical parcellation scheme in which expert raters delineated hundreds of cortical and subcortical structures on high-resolution MRI scans, assigning consistent, color-coded labels to gray- and white-matter regions across the whole brain. It was constructed through detailed, slice-by-slice manual segmentation based on established neuroanatomical landmarks, with a standardized labeling protocol to ensure reproducibility across raters and subjects; the resulting labels are often distributed in MNI or subject-specific spaces and are designed to integrate with common neuroimaging workflows. The atlas is used for automated or semi-automated segmentation, region-of-interest definition, structural and functional MRI analyses, and as a reference standard for validating new parcellation algorithms and multimodal imaging methods in both research and clinical contexts. There is no direct link to the website.
