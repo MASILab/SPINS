@@ -281,29 +281,7 @@ title: SPINS
       </div>
     </div>
     <div class="brain-figure">
-      <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="92" fill="#e8edf8" opacity="0.6"/>
-        <line x1="100" y1="22" x2="100" y2="178" stroke="#b0b8d8" stroke-width="0.75" stroke-dasharray="3 3"/>
-        <line x1="22" y1="100" x2="178" y2="100" stroke="#b0b8d8" stroke-width="0.75" stroke-dasharray="3 3"/>
-        <ellipse cx="100" cy="96" rx="62" ry="52" stroke="#2d4fa0" stroke-width="1.4" fill="none"/>
-        <path d="M100 46 Q97 70 100 96 Q103 122 100 144" stroke="#2d4fa0" stroke-width="1" fill="none"/>
-        <path d="M48 80 Q55 68 65 72 Q72 65 80 70" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <path d="M44 100 Q52 90 63 93 Q70 85 82 89" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <path d="M46 118 Q56 108 66 113 Q74 106 85 110" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <path d="M152 80 Q145 68 135 72 Q128 65 120 70" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <path d="M156 100 Q148 90 137 93 Q130 85 118 89" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <path d="M154 118 Q144 108 134 113 Q126 106 115 110" stroke="#5070c0" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
-        <circle cx="72" cy="88" r="4" fill="#2d4fa0" opacity="0.85"/>
-        <circle cx="128" cy="88" r="4" fill="#0f7c6e" opacity="0.85"/>
-        <circle cx="82" cy="112" r="3.5" fill="#a05a00" opacity="0.85"/>
-        <circle cx="118" cy="112" r="3.5" fill="#2d4fa0" opacity="0.7"/>
-        <circle cx="100" cy="80" r="3" fill="#5070c0" opacity="0.6"/>
-        <text x="100" y="14" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7a7a9a" letter-spacing="1">A</text>
-        <text x="100" y="193" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7a7a9a" letter-spacing="1">P</text>
-        <text x="14" y="103" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7a7a9a">R</text>
-        <text x="186" y="103" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7a7a9a">L</text>
-      </svg>
-      <span class="brain-label">Axial view · MNI space</span>
+      <img src="/SPINS/assets/images/spins_logo.png" alt="SPINS logo" style="width: 200px; height: auto;">
     </div>
   </div>
 
