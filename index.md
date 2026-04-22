@@ -335,7 +335,7 @@ title: SPINS
       <p class="section-eyebrow">Motivation</p>
       <h2>Reducing barriers in neuroimaging research</h2>
       <p>Brain atlases are essential for interpretation of results and communication, yet atlas choice can substantially affect research conclusions. Despite this, no publicly accessible, precomputed resource to compare regions across atlases in 3D has existed.</p>
-      <p>SPINS makes this comparison immediately accessible — no software installation required. Each region page includes an AI-generated anatomical overview, rotating glass brain videos, and triplanar slice images.</p>
+      <p>SPINS makes this comparison immediately accessible, with no software installation required. Each region page includes an AI-generated anatomical overview, rotating glass brain videos, and triplanar slice images.</p>
     </div>
     <div class="about-block">
       <p class="section-eyebrow">Pipeline</p>
