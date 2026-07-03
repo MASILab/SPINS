@@ -19,12 +19,14 @@ title: SPINS
   --teal-light: #e2f4f2;
   --amber: #a05a00;
   --amber-light: #faf0e0;
+  --violet: #6a3fa0;
+  --violet-light: #f0e8fa;
   --serif: 'Source Serif 4', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', monospace;
   font-family: var(--sans);
   color: var(--ink);
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 0 4rem;
   line-height: 1.6;
@@ -58,7 +60,7 @@ title: SPINS
 }
 .spins-home h1 {
   font-family: var(--serif);
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.18;
   color: var(--ink);
@@ -85,6 +87,7 @@ title: SPINS
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
+  transition: background 0.15s;
 }
 .spins-home .btn-primary:hover { background: var(--accent-mid); color: #fff; }
 .spins-home .btn-ghost {
@@ -97,10 +100,14 @@ title: SPINS
   border: 1px solid var(--accent);
   border-radius: 4px;
   text-decoration: none;
+  transition: background 0.15s;
 }
 .spins-home .btn-ghost:hover { background: var(--accent-light); }
 
 .spins-home .brain-figure { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.spins-home .brain-figure img {
+  filter: drop-shadow(0 4px 16px rgba(45,79,160,0.12));
+}
 .spins-home .brain-label {
   font-family: var(--mono);
   font-size: 10px;
@@ -141,30 +148,51 @@ title: SPINS
   color: var(--ink-muted);
   text-transform: uppercase;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .spins-home .atlas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-bottom: 3rem;
 }
 .spins-home .atlas-card {
   background: #fff;
   border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: 1.25rem;
+  border-radius: 8px;
+  padding: 1.4rem;
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: border-color 0.15s, box-shadow 0.15s;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.spins-home .atlas-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--card-accent, var(--accent));
 }
 .spins-home .atlas-card:hover {
   border-color: #b0b8d8;
-  box-shadow: 0 2px 12px rgba(45,79,160,0.08);
+  box-shadow: 0 6px 20px rgba(45,79,160,0.1);
+  transform: translateY(-1px);
   text-decoration: none;
+}
+.spins-home .atlas-card.is-pending { opacity: 0.7; }
+.spins-home .atlas-card.is-pending:hover { transform: none; box-shadow: none; }
+.spins-home .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 .spins-home .card-tag {
   display: inline-block;
@@ -176,12 +204,24 @@ title: SPINS
   padding: 3px 8px;
   border-radius: 3px;
 }
-.spins-home .tag-gray  { background: #eeecf8; color: #4a4880; }
-.spins-home .tag-teal  { background: var(--teal-light); color: var(--teal); }
-.spins-home .tag-amber { background: var(--amber-light); color: var(--amber); }
+.spins-home .tag-gray   { background: #eeecf8; color: #4a4880; }
+.spins-home .tag-teal   { background: var(--teal-light); color: var(--teal); }
+.spins-home .tag-amber  { background: var(--amber-light); color: var(--amber); }
+.spins-home .tag-violet { background: var(--violet-light); color: var(--violet); }
+.spins-home .card-badge {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  background: var(--surface);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
 .spins-home .atlas-card h3 {
   font-family: var(--serif);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: var(--ink);
   line-height: 1.3;
@@ -273,7 +313,7 @@ title: SPINS
       <p class="hero-kicker">MASI Lab · Vanderbilt University</p>
       <h1>A shared public library for <em>brain atlas</em> visualization</h1>
       <p class="hero-body">
-        Brain atlases are essential for interpreting neuroimaging results, yet no publicly accessible, precomputed resource for comparing regions across atlases in 3D has existed — until now. SPINS provides interactive visualizations across 210 regions spanning gray matter, white matter, and functional labels.
+        Brain atlases are essential for interpreting neuroimaging results, yet no publicly accessible, precomputed resource for comparing regions across atlases in 3D has existed — until now. SPINS provides interactive visualizations across gray matter, white matter, and functional labels.
       </p>
       <div class="hero-actions">
         <a class="btn-primary" href="#atlases">Browse atlases</a>
@@ -287,11 +327,11 @@ title: SPINS
 
   <div class="stats-row">
     <div class="stat-item">
-      <div class="stat-number">210</div>
+      <div class="stat-number">326</div>
       <div class="stat-desc">Brain regions<br>rendered</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">3</div>
+      <div class="stat-number">4</div>
       <div class="stat-desc">Atlases<br>available</div>
     </div>
     <div class="stat-item">
@@ -307,25 +347,41 @@ title: SPINS
   <p class="section-eyebrow" id="atlases">Available atlases</p>
   <div class="atlas-grid">
 
-    <a class="atlas-card" href="https://masilab.github.io/SPINS/brainCOLOR_cortical/">
-      <span class="card-tag tag-gray">Gray matter</span>
+    <a class="atlas-card" style="--card-accent: var(--ink-mid);" href="https://masilab.github.io/SPINS/brainCOLOR_cortical/">
+      <div class="card-top">
+        <span class="card-tag tag-gray">Gray matter</span>
+      </div>
       <h3>brainCOLOR</h3>
       <p>Whole-brain parcellation covering cortical and subcortical structures across both hemispheres.</p>
       <span class="card-meta">121 regions · cortical + subcortical</span>
     </a>
 
-    <a class="atlas-card" href="https://masilab.github.io/SPINS/Yeo17_renders/">
-      <span class="card-tag tag-teal">Functional</span>
+    <a class="atlas-card" style="--card-accent: var(--teal);" href="https://masilab.github.io/SPINS/Yeo17_renders/">
+      <div class="card-top">
+        <span class="card-tag tag-teal">Functional</span>
+      </div>
       <h3>Yeo 17-Network</h3>
       <p>Resting-state functional network parcellation. 17 bilateral networks spanning the cortex.</p>
       <span class="card-meta">17 networks · bilateral</span>
     </a>
 
-    <a class="atlas-card" href="https://masilab.github.io/SPINS/Pandora_renders/">
-      <span class="card-tag tag-amber">White matter</span>
+    <a class="atlas-card" style="--card-accent: var(--amber);" href="https://masilab.github.io/SPINS/Pandora_renders/">
+      <div class="card-top">
+        <span class="card-tag tag-amber">White matter</span>
+      </div>
       <h3>Pandora TractSeg</h3>
       <p>White matter tract atlas from TractSeg. Individual tract bundles rendered as binary volumes.</p>
       <span class="card-meta">72 tracts · white matter</span>
+    </a>
+
+    
+    <a class="atlas-card" style="--card-accent: var(--violet);" href="https://masilab.github.io/SPINS/AAL/">
+      <div class="card-top">
+        <span class="card-tag tag-violet">Gray matter</span>
+      </div>
+      <h3>AAL</h3>
+      <p>Automated Anatomical Labeling atlas. Cortical gray-matter parcellation widely used in functional and structural neuroimaging studies.</p>
+      <span class="card-meta">116 regions · cortical</span>
     </a>
 
   </div>
